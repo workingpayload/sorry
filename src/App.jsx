@@ -12,7 +12,7 @@ export default function App() {
         setCountdown((prev) => {
           if (prev === 1) {
             clearInterval(timer);
-            window.location.href = "https://www.savana.com/";
+            window.location.href = "https://www.savana.com/details/a-line-dress-1507822";
           }
           return prev - 1;
         });
