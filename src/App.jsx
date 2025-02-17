@@ -12,7 +12,8 @@ export default function App() {
         setCountdown((prev) => {
           if (prev === 1) {
             clearInterval(timer);
-            window.location.href = "https://www.savana.com/details/a-line-dress-1507822";
+            window.location.href =
+              "https://www.savana.com/category/clothing/dresses-1092";
           }
           return prev - 1;
         });
@@ -28,9 +29,9 @@ export default function App() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        I'm Sorry, SAKSHI!!!!  😭
+        I'm Sorry, SAKSHI!!!! 😭
       </motion.h1>
-      
+
       <motion.p
         className="text-lg mb-6 text-center max-w-lg"
         initial={{ opacity: 0 }}
@@ -77,7 +78,9 @@ export default function App() {
             />
             <h2 className="text-2xl font-bold">🎉 Congratulations! 🎉</h2>
             <p className="mt-2">You won a present for your forgiveness!</p>
-            <p className="mt-2">Redirecting in {countdown} seconds to your gift...</p>
+            <p className="mt-2">
+              Redirecting in {countdown} seconds to your gift...
+            </p>
           </motion.div>
         </div>
       )}
