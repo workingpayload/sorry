@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import myGif from "../src/my_gif.gif";
 
 export default function App() {
   const [showPopup, setShowPopup] = useState(false);
@@ -46,7 +47,7 @@ export default function App() {
         transition={{ duration: 1.2 }}
       >
         <img
-          src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExamRtY2UyNHI2MHlsN3F0NDUzbnl4dTJ5dGw1bnk3Nmd5anB2OGNnNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CYY7fopLRZAUpPe3w5/giphy.gif"
+          src={myGif}
           alt="Love and Sorry gif"
           className="rounded-2xl shadow-lg w-full"
         />
@@ -80,5 +81,6 @@ export default function App() {
           </motion.div>
         </div>
       )}
-    </div>);
+    </div>
+  );
 }
